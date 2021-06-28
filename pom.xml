@@ -18,6 +18,18 @@
         <spring-cloud.version>2020.0.3</spring-cloud.version>
     </properties>
     <dependencies>
+        <!--新开源的项目代码-->
+<!--        <dependency>-->
+<!--            <groupId>net.tascalate.concurrent</groupId>-->
+<!--            <artifactId>net.tascalate.concurrent.lib</artifactId>-->
+<!--            <version>0.7.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.sourceforge.streamsupport</groupId>-->
+<!--            <artifactId>streamsupport</artifactId>-->
+<!--            <version>1.7.3</version>-->
+<!--        </dependency>-->
+        <!--新开源的项目代码-->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
@@ -31,7 +43,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-function-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -46,6 +57,12 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.16.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <dependencyManagement>
