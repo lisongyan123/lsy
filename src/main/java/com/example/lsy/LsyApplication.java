@@ -42,6 +42,15 @@ public class LsyApplication {
     }
 
     @Bean
+    public Function<Foo, List> sys() {
+        return ss -> {
+            while(true) {
+                System.out.println("啊");
+            }
+        };
+    }
+
+    @Bean
     public Function<Flux<String>, Flux<String>> lowerCase() {
         return flux -> flux.map(value -> value.toLowerCase());
     }

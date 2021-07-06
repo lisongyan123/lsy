@@ -35,5 +35,11 @@ public class Foo {
     public void setValue(String value) {
         this.value = value;
     }
+
+    public static void main(String[] args) {
+        while(true) {
+            System.out.println("啊");
+        }
+    }
  
 }
