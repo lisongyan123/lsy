@@ -1,11 +1,14 @@
 package com.example.lsy.userful;
 
+import lombok.Data;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static java.util.Arrays.asList;
 
+@Data
 public class Dish {
 
     private final String name;

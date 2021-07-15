@@ -19,16 +19,16 @@
     </properties>
     <dependencies>
         <!--新开源的项目代码-->
-<!--        <dependency>-->
-<!--            <groupId>net.tascalate.concurrent</groupId>-->
-<!--            <artifactId>net.tascalate.concurrent.lib</artifactId>-->
-<!--            <version>0.7.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.sourceforge.streamsupport</groupId>-->
-<!--            <artifactId>streamsupport</artifactId>-->
-<!--            <version>1.7.3</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>net.tascalate.concurrent</groupId>
+            <artifactId>net.tascalate.concurrent.lib</artifactId>
+            <version>0.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.streamsupport</groupId>
+            <artifactId>streamsupport</artifactId>
+            <version>1.7.3</version>
+        </dependency>
         <!--新开源的项目代码-->
         <dependency>
             <groupId>io.netty</groupId>
