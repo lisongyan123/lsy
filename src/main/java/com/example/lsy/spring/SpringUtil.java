@@ -2,7 +2,12 @@ package com.example.lsy.spring;
 import org.springframework.beans.BeansException; 
 import org.springframework.context.ApplicationContext; 
 import org.springframework.context.ApplicationContextAware; 
-import org.springframework.stereotype.Component; 
+import org.springframework.stereotype.Component;
+
+/**
+ * springboot 更多扩展点 https://www.cnblogs.com/bryan31/p/13346588.html?utm_source=tuicool
+ * springmvc 扩展点 https://www.cnblogs.com/zhangjianbin/p/7903295.html
+ */
 @Component 
 public class SpringUtil implements ApplicationContextAware{ 
   private static ApplicationContext applicationContext; 

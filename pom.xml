@@ -18,6 +18,10 @@
         <spring-cloud.version>2020.0.3</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!--新开源的项目代码-->
         <dependency>
             <groupId>net.tascalate.concurrent</groupId>
