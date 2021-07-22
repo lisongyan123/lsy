@@ -27,7 +27,8 @@ public class FactoryPostProcessor implements BeanFactoryPostProcessor {
                         .getBeanDefinition(beanName);
                 MutablePropertyValues m = beanDefinition.getPropertyValues();
                 if (m.contains("name")) {
-                    m.addPropertyValue("name", "赵四");                    System.out.println("》》》修改了name属性初始值了");
+                    m.addPropertyValue("name", "赵四");
+                    System.out.println("》》》修改了name属性初始值了");
                 }
             }
         }
