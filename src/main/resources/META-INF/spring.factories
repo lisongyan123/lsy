@@ -1,2 +1,5 @@
 org.springframework.boot.SpringApplicationRunListener=com.example.lsy.spring.listener.MyApplicationRunListener
 org.springframework.context.ApplicationContextInitializer=com.example.lsy.spring.initializer.MyApplicationContextInitializer
+org.springframework.beans.factory.config.BeanFactoryPostProcessor=com.example.lsy.spring.processor.TestBeanFactoryPostProcessor
+org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor=com.example.lsy.spring.instantiation.TestInstantiationAwareBeanPostProcessor
+org.springframework.beans.factory.BeanFactoryAware=com.example.lsy.spring.factory.TestBeanFactoryAware

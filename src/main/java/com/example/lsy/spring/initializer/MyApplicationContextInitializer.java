@@ -2,6 +2,7 @@ package com.example.lsy.spring.initializer;
 
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.stereotype.Component;
 /**
  * SpringBoot内置的一些ApplicationContextInitializer
  *
@@ -38,6 +39,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * SpringApplication 的 run 方法中 context 在refresh之前执行
  * 注册属性源(property sources)或者针对上下文的环境信息environment激活相应的profile
  */
+@Component
 public class MyApplicationContextInitializer implements ApplicationContextInitializer {
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
