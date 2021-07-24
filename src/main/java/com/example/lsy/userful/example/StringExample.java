@@ -1,5 +1,8 @@
 package com.example.lsy.userful.example;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -7,10 +10,34 @@ import java.util.stream.Stream;
 public class StringExample {
 
     public static void main(String[] args) {
-        testJoin();
-        testChars();
-        testPatternPredicate();
-        testPatternSplit();
+//        testJoin();
+//        testChars();
+//        testPatternPredicate();
+//        testPatternSplit();
+        Map map = (Map) getMap().put("1",2);
+        map.putIfAbsent("1",2);
+        System.out.println("getMap():" + map);
+    }
+
+    private static Map getMap() {
+        Map map = new HashMap<String,Object>(8) {
+            @Override
+            public Map put(String key, Object value) {
+                Map map = new HashMap() {
+                    @Override
+                    public Map put(Object key, Object value) {
+                        return put("1", "2");
+                    }
+
+                    @Override
+                    public Object putIfAbsent(Object key, Object value) {
+                        return super.putIfAbsent("3", "4");
+                    }
+                };
+                return map;
+            }
+        };
+        return map;
     }
 
     private static void testChars() {

@@ -57,6 +57,7 @@ public class OptionalEx<T> {
         Consumer<Optional<Integer>> c = OptionalConsumer.of(System.out::println, () -> {
             System.out.println("Not fit");
         });
+        IntStream.of(1).filter(v -> v > 1);
         IntStream.range(0, 100).boxed().map(i -> Optional.of(i).filter(j -> j % 2 == 0)).forEach(c);
         Integer a = null;
 //        ifPresent(opt1, x -> System.out.println("found " + x)) .orElse(() -> System.out.println("NOT FOUND"));

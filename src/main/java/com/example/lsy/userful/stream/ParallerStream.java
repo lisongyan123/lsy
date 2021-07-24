@@ -8,6 +8,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ForkJoinPool;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
@@ -23,7 +24,25 @@ public class ParallerStream {
 //        test1();
 //        test2();
 //        test3();
-        test4();
+//        test4();
+        test5();
+    }
+
+    public static void test5() {
+        ArrayList<Integer> list2 = new ArrayList<>();
+        IntStream.range(0, 10000).forEach(list2::add);
+        System.out.println("stream" + list2.size());
+
+        List<Integer> list3 = Stream.iterate(1, n -> n + 2)
+                .limit(10000)
+                .collect(Collectors.toList());
+
+        List<Integer> midList = Lists.newArrayList();
+        midList = list3.parallelStream()
+                .map(v -> v + 1)
+                .collect(Collectors.toList());
+        System.out.println("ParallelStream" + midList.size());
+
     }
 
     public static void test() {
@@ -70,7 +89,7 @@ public class ParallerStream {
     public static void test4() {
         //创建集合大小为100
         List<Integer> integers = Lists.newArrayList();
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < 100; i++) {
             integers.add(i);
         }
         //多管道遍历
