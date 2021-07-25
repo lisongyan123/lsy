@@ -1,10 +1,10 @@
-package com.example.lsy.userful.spliterator;
+package com.example.lsy.userful.spliterators.example;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;
 
-public class SpliteratorExample {
+public class SpliteratorExampleTest {
 
     public static void main(String[] args) {
         tryAdvance();
